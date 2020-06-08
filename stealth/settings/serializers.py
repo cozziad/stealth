@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from stealth.settings.models import ContactInfo
+from settings.models import ContactInfo
 
 
 class ContactInfoSerializer(serializers.ModelSerializer):
