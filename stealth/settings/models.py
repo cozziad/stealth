@@ -10,5 +10,5 @@ class ContactInfo(models.Model):
     mobilePhone = models.CharField("Mobile Phone", max_length=20)
     countryAbbreviation = models.CharField(
         "Country Abbreviation", max_length=2)
-    created_at = models.DateField("Created At", auto_now_add=True)
-    lastUpdate = models.DateField("Last Updated", auto_now=True)
+    created_at = models.DateTimeField("Created At", auto_now_add=True)
+    lastUpdate = models.DateTimeField("Last Updated", auto_now=True)
