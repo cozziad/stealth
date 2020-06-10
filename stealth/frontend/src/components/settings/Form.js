@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { getContactInfo, updateContactInfo } from "../../actions/settings"
@@ -22,8 +22,8 @@ export class Form extends Component {
         e.preventDefault();
         const { id, firstName, lastName, restoreEmail, mobilePhone } = this.state;
         const contactInfo = { firstName, lastName, restoreEmail, mobilePhone };
-        const uid = id
-        this.props.updateContactInfo(contactInfo, id);
+        const uid = id;
+        this.props.updateContactInfo(contactInfo, uid);
     }
 
     componentDidMount() {
